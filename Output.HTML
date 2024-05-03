@@ -1,5 +1,5 @@
 <style>
-    .container {
+    .layout {
         background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -22,7 +22,7 @@
         }
     }
 
-    .back-button-container {
+    .nav-container {
         display: flex;
         margin-top: 15px;
         width: 100%;
@@ -33,49 +33,49 @@
     }
 
     @media (max-width: 991px) {
-        .back-button-container {
+        .nav-container {
             max-width: 100%;
             flex-wrap: wrap;
         }
     }
 
-  .logo {
-            position:relative;
-            top: 220px;
-             width: 200px;
+    .brand-logo {
+        position:relative;
+        top: 220px;
+        width: 200px;
     }
 
-    .back-button {
+    .back-btn {
         font-family: 'Source Serif Pro', serif;
         margin-top: 10px;
     }
 
-    .page-title {
+    .main-title {
         color: #9c6363;
         margin-top: 22px;
         font: 700 50px/48% 'Source Sans Pro', sans-serif;
     }
 
     @media (max-width: 991px) {
-        .page-title {
+        .main-title {
             max-width: 100%;
             font-size: 40px;
         }
     }
 
-    .input-section-title {
+    .input-title {
         font-family: 'Source Serif Pro', serif;
         margin-top: 156px;
     }
 
     @media (max-width: 991px) {
-        .input-section-title {
+        .input-title {
             max-width: 100%;
             margin-top: 40px;
         }
     }
 
-    .output-section {
+    .output {
         font-family: 'Source Serif Pro', serif;
         border-radius: 10px;
         background-color: #d9d9d9;
@@ -89,7 +89,7 @@
     }
 
     @media (max-width: 991px) {
-        .output-section {
+        .output {
             padding: 40px 20px;
         }
     }
@@ -109,13 +109,13 @@
     }
 </style>
 
-<div class="container">
-    <header class="header"><img src="download.png" alt="Cisco Logo" class="logo"></header>
-    <div class="back-button-container">
-        <div class="back-button"></div>
+<div class="layout">
+    <header class="header"><img src="download.png" alt="Brand Logo" class="brand-logo"></header>
+    <div class="nav-container">
+        <div class="back-btn"></div>
     </div>
-    <h1 class="page-title">QOS CALCULATOR AND VISUALIZER</h1>
-    <h2 class="input-section-title">The configuration for desired series</h2>
-    <section class="output-section">Output configuration</section>
+    <h1 class="main-title">QUALITY OF SERVICE CALCULATOR AND VISUALIZER</h1>
+    <h2 class="input-title">The configuration for desired series</h2>
+    <section class="output">Output configuration</section>
     <footer class="footer"></footer>
 </div>
