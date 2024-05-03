@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QoS Calculator and Visualiser</title>
+    <title>Quality of Service Calculator and Visualizer</title>
     <style>
         /* CSS code for styling */
         .qos-calculator {
@@ -42,24 +42,24 @@
             gap: 20px;
         }
 
-        .from-container,
-        .to-container {
+        .source-container,
+        .destination-container {
             display: flex;
             flex-direction: column;
             flex: 1;
             margin: auto 0;
         }
 
-        .from-label,
-        .to-label {
+        .source-label,
+        .destination-label {
             color: #000;
             font-family: Source Serif Pro, sans-serif;
             font-weight: 400;
             align-self: center;
         }
 
-        .from-select,
-        .to-select {
+        .source-select,
+        .destination-select {
             font-family: Source Serif Pro, sans-serif;
             border-radius: 10px;
             background-color: #e0e0e0;
@@ -113,24 +113,24 @@
 <body>
     <main class="qos-calculator">
         <header class="header"><img src="download.png" alt="Cisco Logo" class="logo"></header>
-        <h1 class="title">QOS CALCULATOR AND VISUALIZER</h1>
+        <h1 class="title">QUALITY OF SERVICE CALCULATOR AND VISUALIZER</h1>
         <div class="input-container">
-            <div class="from-container">
-                <label for="from-select" class="from-label">FROM</label>
-                <select id="from-select" class="from-select">
+            <div class="source-container">
+                <label for="source-select" class="source-label">SOURCE</label>
+                <select id="source-select" class="source-select">
                     <option>Choose series</option>
-                    <option value="nexus9k">Nexus 9k</option>
-                    <option value="catalyst9k">Catalyst 9k</option>
-                    <option value="meraki">Meraki</option>
+                    <option value="nx9k">Nexus 9k</option>
+                    <option value="cat9k">Catalyst 9k</option>
+                    <option value="mrk">Meraki</option>
                 </select>
             </div>
-            <div class="to-container">
-                <label for="to-select" class="to-label">TO</label>
-                <select id="to-select" class="to-select">
+            <div class="destination-container">
+                <label for="destination-select" class="destination-label">DESTINATION</label>
+                <select id="destination-select" class="destination-select">
                     <option>Choose series</option>
-                    <option value="nexus9k">Nexus 9k</option>
-                    <option value="catalyst9k">Catalyst 9k</option>
-                    <option value="meraki">Meraki</option>
+                    <option value="nx9k">Nexus 9k</option>
+                    <option value="cat9k">Catalyst 9k</option>
+                    <option value="mrk">Meraki</option>
                 </select>
             </div>
         </div>
